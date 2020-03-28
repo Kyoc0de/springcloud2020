@@ -1,10 +1,11 @@
-package com.kyo.springcloud.service;
+package com.kyo.springcloud.dao;
 
 import com.kyo.springcloud.entities.Payment;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
-
-public interface PaymentService {
+@Mapper
+public interface PaymentDao {
 
     public int create(Payment payment);
 
